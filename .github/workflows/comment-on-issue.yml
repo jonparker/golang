@@ -1,5 +1,5 @@
 on:
-  issue: {type: opened}
+  issues: {type: opened}
 
 jobs:
   comment:
