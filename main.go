@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	bestFinish := bestLeagueFinishes(13, 10, 13, 17, 14, 16)
+	bestFinish := bestLeagueFinishes(13, 10, 13, 17, 12, 16)
 	fmt.Println(bestFinish)
 }
 
