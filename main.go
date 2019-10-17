@@ -1,20 +1,21 @@
 package main
 
 import (
-	"fmt"
+    "fmt"
+    "os"
+    "github.com/cristim/ec2-instances-info"
 )
 
 func main() {
-	bestFinish := bestLeagueFinishes(13, 10, 13, 17, 12, 18)
-	fmt.Println(bestFinish)
-}
+	data, err := ec2instancesinfo.Data()
 
-func bestLeagueFinishes(finishes ...int) int {
-	best := finishes[0]
-	for _, i := range finishes {
-		if i < best {
-			best = i
-		}
+    if err != nil {
+		fmt.Println(err.Error())
+		os.Exit(1)
 	}
-	return best
+    
+    // Print all available instance types
+    for _, i := range *data {
+        fmt.Println("Instance type", i.InstanceType)
+    }
 }
