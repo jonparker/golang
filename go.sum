@@ -1,0 +1,4 @@
+github.com/cristim/ec2-instances-info v0.0.0-20200701154037-249072b86ec3 h1:KZ8LPtnWjt5AO57SNbLjl1E4z656k16P9XOTMGx2e1Q=
+github.com/cristim/ec2-instances-info v0.0.0-20200701154037-249072b86ec3/go.mod h1:P54ByR+TEwo7/gDntpz8l9LO4xfZqmevI6JXNVdt5QQ=
+github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
+github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=

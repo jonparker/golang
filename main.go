@@ -1,21 +1,14 @@
 package main
 
 import (
-    "fmt"
-    "os"
-    "github.com/cristim/ec2-instances-info"
+	"net/http"
+
+	"github.com/jonparker/golang/controllers"
 )
 
 func main() {
-	data, err := ec2instancesinfo.Data()
 
-    if err != nil {
-		fmt.Println(err.Error())
-		os.Exit(1)
-	}
-    
-    // Print all available instance types
-    for _, i := range *data {
-        fmt.Println("Instance type", i.InstanceType)
-    }
+	controllers.RegisterControllers()
+
+	http.ListenAndServe(":3000", nil)
 }
